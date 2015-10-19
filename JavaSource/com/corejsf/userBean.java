@@ -4,9 +4,9 @@ import java.io.Serializable;
 import javax.inject.Named; 
 import javax.enterprise.context.SessionScoped; 
 
-@Named("user") 
+@Named("user")
 @SessionScoped
-public class userBean {
+public class userBean implements Serializable {
 	private String userName;
 	private String password;
    

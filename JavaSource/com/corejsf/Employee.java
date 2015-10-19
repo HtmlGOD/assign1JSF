@@ -2,6 +2,8 @@ package com.corejsf;
 
 import java.io.Serializable;
 
+import javax.inject.Named;
+@Named
 public class Employee implements Serializable{
 	
 	private static final long serialVersionUID = 1L;

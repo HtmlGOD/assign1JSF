@@ -9,7 +9,7 @@ import javax.enterprise.context.SessionScoped;
 
 @Named ("employeeDatabase")
 @SessionScoped
-public class EmployeeDatabase {
+public class EmployeeDatabase implements Serializable {
 	private static final Employee[] employees = new Employee[] {
        new Employee("William",23, "Dupont"),
        new Employee("Anna", 24, "Keeney"),
