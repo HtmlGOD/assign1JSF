@@ -2,8 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
    <h:head>
+   		<h:outputStylesheet library="css" name="styles.css"/>
       <title>Timesheet</title>
    </h:head>
    <h:body>
@@ -16,19 +17,19 @@
             <f:facet name="caption">An Array of Names</f:facet>
 
             <h:column headerClass="columnHeader" footerClass="columnFooter">
-               <f:facet name="header">#{msgs.lastnameColumn}</f:facet>
+               <f:facet name="header">"first name"</f:facet>
 
-               #{name.last},
+               #{employee.name},
 
-               <f:facet name="footer">#{msgs.alphanumeric}</f:facet>
+               <f:facet name="footer">This is footer</f:facet>
             </h:column>
 
             <h:column headerClass="columnHeader" footerClass="columnFooter">
-               <f:facet name="header">#{msgs.firstnameColumn}</f:facet>
+               <f:facet name="header">employee number</f:facet>
 
-               #{name.first}
+               #{employee.empNumber}
 
-               <f:facet name="footer">#{msgs.alphanumeric}</f:facet>
+               <f:facet name="footer">footer 2</f:facet>
             </h:column>
          </h:dataTable>
          <p><h:commandButton value="Login" action="welcome"/></p>
