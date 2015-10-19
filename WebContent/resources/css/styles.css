@@ -6,3 +6,7 @@
 .columnFooter {
    font-size: 0.75em;
 }
+
+* {
+	border: 1px dashed blue;
+}

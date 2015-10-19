@@ -7,7 +7,7 @@ import javax.inject.Named;
 import javax.enterprise.context.SessionScoped; 
    // or import javax.faces.bean.SessionScoped;
 
-@Named
+@Named ("employeeDatabase")
 @SessionScoped
 public class EmployeeDatabase {
 	private static final Employee[] employees = new Employee[] {
