@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+   <h:head>
+   		<h:outputStylesheet library="css" name="styles.css"/>
+      <title>Timesheet</title>
+   </h:head>
+   <h:body>
+      <h:form>
+      
+      <table>
+            <tr>
+               <td class="headerFont">Employee Number</td>
+               <td class="headerFont">2345234</td>
+               <td>Week Number:</td>
+               <td>34</td>
+               <td>Week Ending</td>
+               <td>10/3/2015</td>
+            </tr>
+            <tr>
+               <td class="headerFont">Name:</td>
+               <td>Tony Lee</td>
+            </tr>
+            <tr>
+            	<td>Project</td>
+            	<td>WP</td>
+            	<td>total</td>
+            	<td>Sat</td>
+            	<td>Sun</td>
+            	<td>Mon</td>
+            	<td>Tue</td>
+            	<td>Wed</td>
+            	<td>Thur</td>
+            	<td>Fri</td>
+            	<td>Notes</td>
+            </tr>
+            <tr>
+            	<td>A00932</td>
+            	<td>12422</td>
+            	<td>40</td>
+            	<td>8</td>
+            	<td>8</td>
+            	<td>8</td>
+            	<td>8</td>
+            	<td>8</td>
+            	<td>0</td>
+            	<td>0</td>
+            	<td>Stuff</td>
+            </tr>
+            <tr>
+            	<td>TOTAL</td>
+            	<td></td>
+            	<td>40</td>
+            	<td>8</td>
+            	<td>8</td>
+            	<td>8</td>
+            	<td>8</td>
+            	<td>8</td>
+            	<td>0</td>
+            	<td>0</td>
+            	<td></td>
+            </tr>
+      </table>     
+         <!--  <h:dataTable value="#{employeeDatabase.employees}" var="employee"
+                      captionStyle="font-size: 0.95em; font-style:italic"
+                      style="width: 250px;">
+
+            <h:column headerClass="columnHeader" footerClass="columnFooter">
+               <f:facet name="header">Name</f:facet>
+
+               #{employee.name}
+            </h:column>
+
+            <h:column headerClass="columnHeader" footerClass="columnFooter">
+               <f:facet name="header">Employee Number</f:facet>
+
+               #{employee.empNumber}
+
+            </h:column>
+            
+            <h:column headerClass="columnHeader" footerClass="columnFooter">
+               <f:facet name="header">User Name</f:facet>
+
+               #{employee.userName}
+
+            </h:column>
+         </h:dataTable> -->
+         <p><h:commandButton value="back" action="options"/></p>
+      </h:form>
+   </h:body>
+</html>
