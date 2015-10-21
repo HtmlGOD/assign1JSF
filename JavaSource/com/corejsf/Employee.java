@@ -13,6 +13,9 @@ public class Employee implements Serializable{
     private int empNumber;
     /** The employee's login ID. */
     private String userName;
+    
+    private boolean editable;
+    private boolean addEmp;
 
 
     /**
@@ -77,4 +80,20 @@ public class Employee implements Serializable{
     public void setUserName(final String id) {
         userName = id;
     }
+
+	public boolean isEditable() {
+		return editable;
+	}
+
+	public void setEditable(boolean editable) {
+		this.editable = editable;
+	}
+
+	public boolean isAddEmp() {
+		return addEmp;
+	}
+
+	public void setAddEmp(boolean addEmp) {
+		this.addEmp = addEmp;
+	}
 }
