@@ -2,10 +2,10 @@ package com.corejsf;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-<<<<<<< HEAD
+//<<<<<<< HEAD
 import java.util.Arrays;
-=======
->>>>>>> b1f08f5daba5424870a73f379b905299e1971581
+//=======
+//>>>>>>> b1f08f5daba5424870a73f379b905299e1971581
 
 import javax.inject.Named;
 // or import javax.faces.bean.ManagedBean;
@@ -15,12 +15,14 @@ import javax.enterprise.context.SessionScoped;
 @Named("employeeDatabase")
 @SessionScoped
 public class EmployeeDatabase implements Serializable {
+	
 	/*private static final Employee[] employees = new Employee[] {
        new Employee("William",23, "Dupont"),
        new Employee("Anna", 24, "Keeney"),
        new Employee("Mariko",25,  "Randor"),
 <<<<<<< HEAD
        new Employee("John", 26, "Wilson")*/
+	
 	private static final ArrayList<Employee> employees = new ArrayList<Employee>(Arrays.asList(
 		new Employee("William",23, "Dupont"),
 	    new Employee("Anna", 24, "Keeney"),
@@ -43,9 +45,9 @@ public class EmployeeDatabase implements Serializable {
 	      employees.remove(deleteEmp);
 	      return null;
 	   }
-=======
-       new Employee("John", 26, "Wilson")
-   };
+//=======
+//       new Employee("John", 26, "Wilson")
+//   };
 	
 	private ArrayList<Employee> employeesTwo;
 	private int size;
@@ -59,12 +61,12 @@ public class EmployeeDatabase implements Serializable {
 		size = employeesTwo.size();
 	}
 
-   public Employee[] getEmployees() { return employees;}
+   //public Employee[] getEmployees() { return employees;}
    
    public ArrayList<Employee> getEmployees2() { return employeesTwo;}
    
    public int getSize() {
 	   return employeesTwo.size();
    }
->>>>>>> b1f08f5daba5424870a73f379b905299e1971581
+//>>>>>>> b1f08f5daba5424870a73f379b905299e1971581
 }
