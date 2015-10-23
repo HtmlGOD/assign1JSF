@@ -1,7 +1,11 @@
 package com.corejsf;
 
 import java.io.Serializable;
+import javax.inject.Named;
+import javax.enterprise.context.SessionScoped; 
 
+@Named("credentials") 
+@SessionScoped
 public class Credentials implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -9,6 +13,8 @@ public class Credentials implements Serializable {
     private String userName;
     /** The password. */
     private String password;
+    
+    
     /**
      * @return the loginID
      */
