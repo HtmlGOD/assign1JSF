@@ -13,30 +13,49 @@
          <h:dataTable value="#{employeeDatabase.employees}" var="employee"
                       captionStyle="font-size: 0.95em; font-style:italic"
                       style="width: 250px;">
-
+			<h:column headerClass="columnHeader" footerClass="columnFooter">
+               <f:facet name="header">Edit</f:facet>
+               <h:selectBooleanCheckbox value="#{employee.editable}" onclick="submit()"/>
+            </h:column>
             <h:column headerClass="columnHeader" footerClass="columnFooter">
                <f:facet name="header">Name</f:facet>
-
-               #{employee.name}
+				<h:inputText value="#{employee.name}" rendered="#{employee.editable}" 
+                            size="10"/>
+               <h:outputText value="#{employee.name}" rendered="#{not employee.editable}"/>
+               
             </h:column>
 
             <h:column headerClass="columnHeader" footerClass="columnFooter">
                <f:facet name="header">Employee Number</f:facet>
 
-               #{employee.empNumber}
-
+               <h:inputText value="#{employee.empNumber}" rendered="#{employee.editable}" 
+                            size="10"/>
+               <h:outputText value="#{employee.empNumber}" rendered="#{not employee.editable}"/>
+               
             </h:column>
             
             <h:column headerClass="columnHeader" footerClass="columnFooter">
                <f:facet name="header">User Name</f:facet>
 
-               #{employee.userName}
+              <h:inputText value="#{employee.userName}" rendered="#{employee.editable}" 
+                            size="10"/>
+               <h:outputText value="#{employee.userName}" rendered="#{not employee.editable}"/>
 
             </h:column>
+            <h:column>
+               <h:commandLink value="Delete" 
+                              action="#{employeeDatabase.delete(employee)}"/>
+            </h:column>
          </h:dataTable>
+<<<<<<< HEAD
+         <p><h:commandButton value="Back" action="options"/></p>
+         <p><h:commandButton value="Add" action="#{employeeDatabase.add}"/></p>
+         <p><h:commandButton value="Save" action="#{employeeDatabase.save}"/></p>
+=======
          <h3>ArrayList size:</h3>
          <h3>#{employee.size}</h3>
          <p><h:commandButton value="back" action="options"/></p>
+>>>>>>> b1f08f5daba5424870a73f379b905299e1971581
       </h:form>
    </h:body>
 </html>
