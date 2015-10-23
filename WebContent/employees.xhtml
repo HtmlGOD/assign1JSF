@@ -10,7 +10,7 @@
    <h:body>
       <h:form>
          <h3>Registered Employees:</h3>   
-         <h:dataTable value="#{employeeDatabase.employees2}" var="employee"
+         <h:dataTable value="#{employeeDatabase.employees}" var="employee"
                       captionStyle="font-size: 0.95em; font-style:italic"
                       style="width: 250px;">
 
@@ -35,7 +35,7 @@
             </h:column>
          </h:dataTable>
          <h3>ArrayList size:</h3>
-         <h3>#{employeeDatabase.size}</h3>
+         <h3>#{employee.size}</h3>
          <p><h:commandButton value="back" action="options"/></p>
       </h:form>
    </h:body>

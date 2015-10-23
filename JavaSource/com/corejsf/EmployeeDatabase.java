@@ -8,7 +8,7 @@ import javax.inject.Named;
 import javax.enterprise.context.SessionScoped; 
    // or import javax.faces.bean.SessionScoped;
 
-@Named ("employeeDatabase")
+@Named("employeeDatabase")
 @SessionScoped
 public class EmployeeDatabase implements Serializable {
 	private static final Employee[] employees = new Employee[] {
@@ -18,21 +18,23 @@ public class EmployeeDatabase implements Serializable {
        new Employee("John", 26, "Wilson")
    };
 	
-	private ArrayList<Employee> employees2;
+	private ArrayList<Employee> employeesTwo;
 	private int size;
 	
 	public EmployeeDatabase() {
-		employees2 = new ArrayList<Employee>();
-		employees2.add(new Employee("Chris", 1, "cbow"));
-		employees2.add(new Employee("Tony", 2, "tlee"));
-		employees2.add(new Employee("Wesley", 3, "wsura"));
-		employees2.add(new Employee("Anthony", 4, "afigueroa"));
-		size = employees2.size();
+		employeesTwo = new ArrayList<Employee>();
+		employeesTwo.add(new Employee("Chris", 1, "cbow"));
+		employeesTwo.add(new Employee("Tony", 2, "tlee"));
+		employeesTwo.add(new Employee("Wesley", 3, "wsura"));
+		employeesTwo.add(new Employee("Anthony", 4, "afigueroa"));
+		size = employeesTwo.size();
 	}
 
    public Employee[] getEmployees() { return employees;}
-   public ArrayList<Employee> getEmployees2() { return employees2;}
+   
+   public ArrayList<Employee> getEmployees2() { return employeesTwo;}
+   
    public int getSize() {
-	   return employees2.size();
+	   return employeesTwo.size();
    }
 }
